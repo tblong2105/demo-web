@@ -11,6 +11,7 @@ pipeline {
         stage('Build Backend') {
             steps {
                 // Build Spring Boot using Maven
+                sh 'chmod +x mvnw'
                 sh './mvnw clean install'
             }
         }
