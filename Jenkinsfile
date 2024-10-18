@@ -16,13 +16,6 @@ pipeline {
             }
         }
 
-        stage('Deploy Backend') {
-            steps {
-                // Deploy backend (e.g., Docker or server script)
-                sh 'docker build -t spring-boot-app .'
-                sh 'docker run -d -p 8080:8080 spring-boot-app'
-            }
-        }
     }
 
     post {
