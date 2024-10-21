@@ -13,6 +13,7 @@ pipeline {
                 // Build Spring Boot using Maven
                 sh 'chmod +x mvnw'
                 sh './mvnw clean install'
+                sh './mvnw build'
             }
         }
 
